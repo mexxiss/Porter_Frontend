@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+@theme {
+  --color-primary: #f13b44;
+  --color-secondary: #0f1729;
+  --color-primary-focus: #1e52f1;
+  --color-color1: #020817;
+  --color-color2: #8b8b8b;
+  --color-border: #e2e8f0;
+  --text-shadow-xl: -0.03ex 0 currentColor, 0.03ex 0 currentColor;
+}
+
+@layer base {
+  * {
+    @apply duration-300;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-[1400px] mx-auto px-4 md:px-6;
+  }
+
+  .btn1 {
+    @apply border border-primary bg-primary text-white py-2.5 px-6 font-medium rounded-full hover:bg-primary/85 cursor-pointer flex items-center justify-center;
+  }
+  .btn2 {
+    @apply border border-color1 text-color1 py-2 px-6 font-medium rounded-full cursor-pointer flex items-center justify-center;
+    @apply hover:border-primary hover:text-primary;
+    @apply disabled:cursor-not-allowed disabled:hover:text-color1 disabled:hover:border-color1 disabled:opacity-60;
+  }
+  .cancel {
+    @apply hover:text-red-600 hover:border-red-600;
+    @apply disabled:cursor-not-allowed disabled:hover:text-color1 disabled:hover:border-color1 disabled:opacity-60;
+  }
+}
