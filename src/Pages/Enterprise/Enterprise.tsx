@@ -184,6 +184,53 @@ const Enterprise = () => {
             </section>
 
             {/* Key Features We Offer */}
+            <section className="py-16 bg-secondary/95 text-white">
+                <div className="container mx-auto px-4">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Key Features We Offer</h2>
+                    </div>
+                    <div>
+                        <div className="grid grid-cols-5 gap-4">
+                            <div className="col-span-3">
+                                <div className="bg-white/10 rounded-2xl p-6 text-white">
+                                    <h4 className="text-2xl font-medium">Unified Trip Details</h4>
+                                    <p className="text-sm text-white/80 mt-1">Check all your goods transportation trip information in the city.</p>
+                                    <div className="mt-6">
+                                        <img src="https://nest-platform-assets.porter.in/Trip_Details_Desktop_59a39bc6ea.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-span-2">
+                                <div className="bg-white/10 rounded-2xl p-6 text-white">
+                                    <h4 className="text-2xl font-medium">Payments through Prepaid Wallet</h4>
+                                    <p className="text-sm text-white/80 mt-1">No cash reimbursement hassles, as all trips are prepaid.</p>
+                                    <div className="mt-6">
+                                        <img src="https://nest-platform-assets.porter.in/Business_Wallet_Desktop_f0eb40b5b6.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-span-2">
+                                <div className="bg-white/10 rounded-2xl p-6 text-white">
+                                    <h4 className="text-2xl font-medium">Complete Clarity and Control</h4>
+                                    <p className="text-sm text-white/80 mt-1">Monitor wallet usage with full visibility.</p>
+                                    <div className="mt-6">
+                                        <img src="https://nest-platform-assets.porter.in/Payments_Tab_Desktop_9195ba946f.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-span-3">
+                                <div className="bg-white/10 rounded-2xl p-6 text-white">
+                                    <h4 className="text-2xl font-medium">Multi-User Access</h4>
+                                    <p className="text-sm text-white/80 mt-1">Seamlessly add, remove, activate, or deactivate users to maintain unified logistics operations.</p>
+                                    <div className="mt-6">
+                                        <img src="https://nest-platform-assets.porter.in/Employee_Details_Desktop_77796c287a.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className="py-16 bg-secondary text-white">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-16">
@@ -260,7 +307,7 @@ const Enterprise = () => {
                 </div>
             </section>
 
-            <FAQSection/>
+            <FAQSection />
         </div>
     )
 }

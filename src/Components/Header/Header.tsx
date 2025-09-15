@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router"
 
 const Header = () => {
     return (
@@ -11,15 +12,18 @@ const Header = () => {
                     </div>
 
                     <nav className=" items-center space-x-6">
-                        <a href="#services" className="font-medium text-foreground/80 hover:text-primary-500 transition-colors">
-                            Services
-                        </a>
-                        <a href="#about" className="font-medium text-foreground/80 hover:text-primary-500 transition-colors">
-                            About
-                        </a>
-                        <a href="#contact" className="font-medium text-foreground/80 hover:text-primary-500 transition-colors">
+                        <NavLink to="/enterprise" className={({ isActive }) => `font-medium text-foreground/80 hover:text-primary-500 transition-colors ${isActive ? 'text-primary-500' : ''}`}>
+                            For Enterprise
+                        </NavLink>
+                        <NavLink to="/partners" className={({ isActive }) => `font-medium text-foreground/80 hover:text-primary-500 transition-colors ${isActive ? 'text-primary-500' : ''}`}>
+                            Driver Partner
+                        </NavLink>
+                        <NavLink to="/about-us" className={({ isActive }) => `font-medium text-foreground/80 hover:text-primary-500 transition-colors ${isActive ? 'text-primary-500' : ''}`}>
+                            About Us
+                        </NavLink>
+                        <NavLink to="/contact-us" className={({ isActive }) => `font-medium text-foreground/80 hover:text-primary-500 transition-colors ${isActive ? 'text-primary-500' : ''}`}>
                             Contact
-                        </a>
+                        </NavLink>
                     </nav>
                 </div>
             </div>

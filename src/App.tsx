@@ -3,6 +3,8 @@ import Layout from "./Layout/Layout"
 import Home from "./Pages/Home/Home";
 import Partners from "./Pages/Partners/Partners.tsx";
 import Enterprise from "./Pages/Enterprise/Enterprise.tsx";
+import ContactUs from "./Pages/ContactUs/ContactUs.tsx";
+import AboutUs from "./Pages/AboutUs/AboutUs.tsx";
 
 const App = () => {
 
@@ -22,6 +24,14 @@ const App = () => {
         {
           path: "/enterprise",
           element: <Enterprise />
+        },
+        {
+          path: "/contact-us",
+          element: <ContactUs />
+        },
+        {
+          path: "/about-us",
+          element: <AboutUs />
         },
       ]
     },
