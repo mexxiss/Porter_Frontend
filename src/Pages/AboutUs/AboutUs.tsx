@@ -16,13 +16,13 @@ const AboutUs = () => {
 
             <section className="py-16">
                 <div className="container">
-                    <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
+                    <h2 className="text-3xl font-bold text-primary mb-6">Our Story</h2>
                     <p className="text-lg text-muted-foreground mb-8">
                         Founded in 2020, SwiftMove has quickly grown to become a leading platform for logistics and transportation services. Our team of experienced professionals is passionate about delivering innovative solutions that meet the evolving needs of our clients.
                     </p>
                     <div className="grid grid-cols-2 gap-6 items-center">
                         <div>
-                            <h2 className="text-3xl font-bold text-foreground mb-6">Our Values</h2>
+                            <h2 className="text-3xl font-bold text-primary mb-6">Our Values</h2>
                             <ul className="text-muted-foreground space-y-2">
                                 <li><strong>Customer Focus:</strong> We prioritize our clients' needs and strive to exceed their expectations with every delivery.</li>
                                 <li><strong>Integrity:</strong> We conduct our business with honesty and transparency, building trust with our clients and partners.</li>
@@ -37,10 +37,9 @@ const AboutUs = () => {
                 </div>
             </section>
 
-
             <section className="py-16 bg-secondary text-white">
                 <div className="container mx-auto px-4">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-10">
                         <h2 className="text-3xl font-bold mb-4 leading-11">India's Leading Goods Transport Agency | <br /> Revolutionizing Goods Delivery</h2>
                     </div>
 
@@ -60,8 +59,6 @@ const AboutUs = () => {
                     </div>
                 </div>
             </section>
-
-
 
             <section className="py-16">
                 <div className="container">

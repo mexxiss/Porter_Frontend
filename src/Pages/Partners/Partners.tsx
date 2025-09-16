@@ -66,7 +66,7 @@ const Partners = () => {
     ];
     return (
         <div>
-            <section className="relative bg-blue-50 py-16 overflow-hidden">
+            <section className="relative bg-blue-50/50 py-16 overflow-hidden">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <img

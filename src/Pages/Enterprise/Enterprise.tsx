@@ -26,7 +26,7 @@ const Enterprise = () => {
     ];
     return (
         <div>
-            <section className="relative bg-blue-50 py-16 overflow-hidden">
+            <section className="relative bg-blue-50/50 py-16 overflow-hidden">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <img
@@ -186,7 +186,7 @@ const Enterprise = () => {
             {/* Key Features We Offer */}
             <section className="py-16 bg-secondary/95 text-white">
                 <div className="container mx-auto px-4">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-10">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">Key Features We Offer</h2>
                     </div>
                     <div>
@@ -233,7 +233,7 @@ const Enterprise = () => {
             </section>
             <section className="py-16 bg-secondary text-white">
                 <div className="container mx-auto px-4">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-10">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">OUR GROWING NETWORK</h2>
                     </div>
 
@@ -282,7 +282,7 @@ const Enterprise = () => {
             {/* Testimonials */}
             <section className="py-16 bg-secondary text-white">
                 <div className="container mx-auto px-4">
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-10">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">SOME WORDS FROM OUR HAPPY CUSTOMERS</h2>
                     </div>
 

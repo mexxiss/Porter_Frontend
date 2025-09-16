@@ -4,7 +4,7 @@ const Footer = () => {
     const footerSections = [
         {
             title: "Services",
-            links: ["Express Delivery", "Package Tracking", "Bulk Shipping", "International", "Same Day", "Warehousing"]
+            links: ["Two Wheelers", "Trucks", "Packers & Movers", "International", "Same Day", "Warehousing"]
         },
         {
             title: "Support",
