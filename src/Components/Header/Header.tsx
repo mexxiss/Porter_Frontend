@@ -1,4 +1,4 @@
-import { NavLink } from "react-router"
+import { Link, NavLink } from "react-router"
 
 const Header = () => {
     return (
@@ -6,9 +6,11 @@ const Header = () => {
             <div className="container">
                 <div className="flex ite justify-between py-3">
                     <div className="flex items-center space-x-4">
-                        <h1 className="text-2xl font-bold text-primary">
-                            SwiftMove
-                        </h1>
+                        <Link to="/">
+                            <h1 className="text-2xl font-bold text-primary">
+                                SwiftMove
+                            </h1>
+                        </Link>
                     </div>
 
                     <nav className=" items-center space-x-6">

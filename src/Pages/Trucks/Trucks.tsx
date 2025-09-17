@@ -80,7 +80,10 @@ const Trucks = () => {
                                 </div>
                                 <div>
                                     <label className="text-sm text-muted-foreground">What best describes your goods?</label>
-                                    <select value={formData.goodsType} onValueChange={(value) => setFormData({ ...formData, goodsType: value })}>
+                                    <select
+                                        value={formData.goodsType}
+                                        onChange={(e) => setFormData({ ...formData, goodsType: e.target.value })}
+                                    >
                                         <option value="documents">Documents</option>
                                         <option value="food">Food Items</option>
                                         <option value="electronics">Electronics</option>

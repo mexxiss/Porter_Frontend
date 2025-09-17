@@ -1,28 +1,72 @@
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router";
 
 const Footer = () => {
     const footerSections = [
         {
-            title: "Services",
-            links: ["Two Wheelers", "Trucks", "Packers & Movers", "International", "Same Day", "Warehousing"]
+            title: "Quick Links",
+            links: [
+                {
+                    title: "Driver Partner",
+                    link: "/partners"
+                },
+                {
+                    title: "Porter Enterprise",
+                    link: "/enterprise"
+                },
+                {
+                    title: "Two Wheelers",
+                    link: "/two-wheelers"
+                },
+                {
+                    title: "Trucks",
+                    link: "/trucks"
+                },
+                {
+                    title: "Packers & Movers",
+                    link: "/packers-and-movers"
+                },
+            ]
         },
         {
             title: "Support",
-            links: ["Help Center", "Contact Us", "Track Package", "Shipping Guide", "API Docs", "Live Chat"]
+            links: [
+                {
+                    title: "Contact Us",
+                    link: "/contact-us"
+                },
+                {
+                    title: "Privacy Policy",
+                    link: "/privacy-policy"
+                },
+                {
+                    title: "Terms of Service",
+                    link: "/terms-of-service"
+                },
+                {
+                    title: "Terms of Service - SSI",
+                    link: "/terms-of-service-ssi"
+                },
+            ]
         },
         {
             title: "Company",
-            links: ["About Us", "Careers", "Press", "Investors", "Blog", "Partnerships"]
+            links: [
+                {
+                    title: "About Us",
+                    link: "/about-us"
+                },
+            ]
         },
-        {
-            title: "Coverage",
-            links: ["Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata", "Hyderabad", "Pune", "Ahmedabad"]
-        }
+        // {
+        //     title: "Coverage",
+        //     links: ["Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata", "Hyderabad", "Pune", "Ahmedabad"]
+        // }
     ];
     return (
         <footer className="bg-slate-900 text-white py-10">
             <div className="container">
-                <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
+                <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
                     {/* Brand Section */}
                     <div className="lg:col-span-2">
                         <h3 className="text-3xl font-bold mb-4 text-primary">
@@ -63,9 +107,9 @@ const Footer = () => {
                             <ul className="space-y-3">
                                 {section.links.map((link, linkIndex) => (
                                     <li key={linkIndex}>
-                                        <a href="#" className="text-white/70 hover:text-primary transition-colors">
-                                            {link}
-                                        </a>
+                                        <Link to={link.link} className="text-white/70 hover:text-primary transition-colors">
+                                            {link.title}
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>

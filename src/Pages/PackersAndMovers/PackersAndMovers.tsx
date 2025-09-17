@@ -1,6 +1,6 @@
 import { useState } from "react";
 import img2 from "../../assets/images/img2.png"
-import { Axe, Clock, Cog, Download, GitPullRequest, Home, Package, QrCode, Shield, Truck, Users, Zap } from "lucide-react";
+import { Axe, Clock, Cog, Download, GitPullRequest, QrCode, Shield, Users, Zap } from "lucide-react";
 import FAQSection from "../../Components/FAQSection/FAQSection";
 
 const PackersAndMovers = () => {
@@ -140,7 +140,10 @@ const PackersAndMovers = () => {
                                 </div>
                                 <div>
                                     <label className="text-sm text-muted-foreground">Service Type</label>
-                                    <select value={formData.service} onValueChange={(value) => setFormData({ ...formData, service: value })}>
+                                    <select
+                                        value={formData.service}
+                                        onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                                    >
                                         <option value="documents">Household Shifting</option>
                                         <option value="food">Office Relocation</option>
                                         <option value="electronics">Vehicle Transportation</option>

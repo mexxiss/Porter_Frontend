@@ -9,6 +9,8 @@ import TwoWheelers from "./Pages/TwoWheelers/TwoWheelers.tsx";
 import PackersAndMovers from "./Pages/PackersAndMovers/PackersAndMovers.tsx";
 import Trucks from "./Pages/Trucks/Trucks.tsx";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy.tsx";
+import TermsOfService from "./Pages/TermsOfService/TermsOfService.tsx";
+import TermsOfServiceSSI from "./Pages/TermsOfServiceSSI/TermsOfServiceSSI.tsx";
 
 const App = () => {
 
@@ -52,6 +54,14 @@ const App = () => {
         {
           path: "/privacy-policy",
           element: <PrivacyPolicy />
+        },
+        {
+          path: "/terms-of-service",
+          element: <TermsOfService/>
+        },
+        {
+          path: "/terms-of-service-ssi",
+          element: <TermsOfServiceSSI/>
         },
       ]
     },

@@ -174,7 +174,10 @@ const TwoWheelers = () => {
                                 </div>
                                 <div>
                                     <label className="text-sm text-muted-foreground">What best describes your goods?</label>
-                                    <select value={formData.goodsType} onValueChange={(value) => setFormData({ ...formData, goodsType: value })}>
+                                    <select
+                                        value={formData.goodsType}
+                                        onChange={(e) => setFormData({ ...formData, goodsType: e.target.value })}
+                                    >
                                         <option value="documents">Documents</option>
                                         <option value="food">Food Items</option>
                                         <option value="electronics">Electronics</option>
@@ -213,7 +216,7 @@ const TwoWheelers = () => {
                             <div className="p-8 border border-border rounded-lg shadow-xs">
                                 <div className="flex items-center gap-4 mb-6">
                                     <h3 className="text-3xl font-bold text-foreground">2 Wheeler</h3>
-                                    <span variant="secondary" className="bg-warning/10 text-warning text-lg px-4 py-2">20 kg</span>
+                                    <span className="bg-warning/10 text-warning text-lg px-4 py-2">20 kg</span>
                                 </div>
                                 <p className="text-2xl mb-4">
                                     <span className="font-bold text-foreground">Starting From ₹45</span>
