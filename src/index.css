@@ -72,9 +72,6 @@ textarea {
     transform: translateX(-80px);
     opacity: 0;
   }
-  40% {
-    transform: translateX(40vw);
-  }
   45% {
     transform: translateX(40vw);
     opacity: 0;

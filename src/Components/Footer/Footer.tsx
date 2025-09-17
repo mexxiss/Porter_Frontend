@@ -83,11 +83,11 @@ const Footer = () => {
                             </div>
                             <div className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-primary" />
-                                <span className="text-white/80">support@swiftmove.com</span>
+                                <span className="text-white/80">info@mexxiss.com</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <MapPin className="w-5 h-5 text-primary" />
-                                <span className="text-white/80">San Francisco, CA</span>
+                                <span className="text-white/80">Gujrat, India</span>
                             </div>
                         </div>
 
@@ -121,8 +121,8 @@ const Footer = () => {
 
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                     <div className="text-white/60 text-center md:text-left">
-                        <p>&copy; 2024 SwiftMove. All rights reserved.</p>
-                        <p className="text-sm mt-1">Privacy Policy • Terms of Service • Cookie Policy</p>
+                        <p>&copy; 2025 SwiftMove. All rights reserved.</p>
+                        {/* <p className="text-sm mt-1">Privacy Policy • Terms of Service • Cookie Policy</p> */}
                     </div>
 
                     <button className="btn1">
