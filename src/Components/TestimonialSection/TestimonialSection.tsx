@@ -2,9 +2,9 @@ import { Quote, Star } from "lucide-react"
 
 const TestimonialSection = () => {
     return (
-        <section className="py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+        <section className="py-10 md:py-12 lg:py-14 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
             <div className="container">
-                <div className="max-w-4xl mx-auto text-center">
+                <div className="text-center">
                     <div className="mb-8">
                         <Quote className="w-16 h-16 mx-auto text-primary mb-6" />
                         <div className="flex justify-center mb-4">
@@ -14,22 +14,38 @@ const TestimonialSection = () => {
                         </div>
                     </div>
 
-                    <div className="p-12 bg-white border border-border rounded-md shadow-medium">
-                        <blockquote className="text-2xl font-medium text-card-foreground mb-8">
-                            "SwiftMove has revolutionized our supply chain operations. Their cutting-edge logistics platform helped us achieve a 40% reduction in delivery times while maintaining 99.9% accuracy."
-                        </blockquote>
+                    <div className="grid grid-cols-2 gap-4">
+                        <div className="p-8 bg-white border border-border rounded-md shadow-medium">
+                            <blockquote className="text-xl font-medium text-card-foreground mb-6">
+                                "SwiftMove has revolutionized our supply chain operations. Their cutting-edge logistics platform helped us achieve a 40% reduction in delivery times while maintaining 99.9% accuracy."
+                            </blockquote>
 
-                        <div className="text-center">
-                            <div className="font-semibold text-lg text-card-foreground">
-                                Sarah Chen
+                            <div className="text-center">
+                                <div className="font-semibold text-lg text-card-foreground">
+                                    Sarah Chen
+                                </div>
+                                <div className="text-secondary/60">
+                                    CEO, TechFlow Innovations
+                                </div>
                             </div>
-                            <div className="text-muted-foreground">
-                                CEO, TechFlow Innovations
+                        </div>
+                        <div className="p-8 bg-white border border-border rounded-md shadow-medium">
+                            <blockquote className="text-xl font-medium text-card-foreground mb-6">
+                                "SwiftMove has revolutionized our supply chain operations. Their cutting-edge logistics platform helped us achieve a 40% reduction in delivery times while maintaining 99.9% accuracy."
+                            </blockquote>
+
+                            <div className="text-center">
+                                <div className="font-semibold text-lg text-card-foreground">
+                                    Hung Chan
+                                </div>
+                                <div className="text-secondary/60">
+                                    Director, TechFlow Innovations
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="mt-12 p-8 bg-primary rounded-md text-white">
+                    <div className="mt-12 p-8 bg-primary rounded-md text-white max-w-4xl mx-auto">
                         <div className="text-sm font-medium mb-2 opacity-90">BREAKING NEWS</div>
                         <h3 className="text-2xl font-bold mb-4">
                             SwiftMove Secures $50M Series B Funding
