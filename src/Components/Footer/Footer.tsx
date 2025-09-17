@@ -1,5 +1,6 @@
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router";
+import logo from "../../assets/images/Logo.png"
 
 const Footer = () => {
     const footerSections = [
@@ -69,8 +70,8 @@ const Footer = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
                     {/* Brand Section */}
                     <div className="lg:col-span-2">
-                        <h3 className="text-3xl font-bold mb-4 text-primary">
-                            SwiftMove
+                        <h3 className="text-3xl font-bold mb-4 text-primary flex items-center gap-1">
+                          <img src={logo} alt="" className="w-14" />  SwiftMove
                         </h3>
                         <p className="text-white/80 mb-6 leading-relaxed">
                             Revolutionizing logistics with AI-powered delivery solutions. Fast, reliable, and secure shipping worldwide.

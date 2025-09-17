@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router"
+import logo from "../../assets/images/Logo.png"
 
 const Header = () => {
     return (
@@ -7,8 +8,8 @@ const Header = () => {
                 <div className="flex ite justify-between py-3">
                     <div className="flex items-center space-x-4">
                         <Link to="/">
-                            <h1 className="text-2xl font-bold text-primary">
-                                SwiftMove
+                            <h1 className="text-2xl font-bold text-primary flex items-center gap-1">
+                               <img src={logo} alt="" className="w-12" /> SwiftMove
                             </h1>
                         </Link>
                     </div>
